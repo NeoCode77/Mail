@@ -14,12 +14,15 @@ class controller{
         });
     }
 
-    login(req,res){
+    post_login(req,res){
         let data = req.body;
         this.connection.query("select case when exists( select * from  user where email = ? and password = ? ) then true else false end as exits",[data.email,data.password] ,(err,result)=> {
             res.json(result);
         })
-        
+    }
+
+    get_login(req,res){
+        res.render("login.ejs");
     }
 }
 
