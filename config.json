@@ -1,0 +1,11 @@
+{
+    "server": {
+        "port" : "3000"
+    },
+    "database": {
+        "url" : "localhost",
+        "username" : "kresna",
+        "password" : "admin123",
+        "database" : "project"
+    }
+}
