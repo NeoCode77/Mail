@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    height: 80%;
+    background-color: #478498;
+    display: grid;
+    grid-template-columns: 1.5fr 6fr 9fr;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 15px solid #478498;
+    gap: 10px;
+}
+
+.container .sidebar{
+    background-color: #478498;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.container .sidebar img{
+    width: 70px;
+    height: 70px;
+    color: white;
+}
+
+.container .mainbar{
+    background-color:  #ebe7e2;
+    border-radius: 20px ;
+
+}
+
+.container .viewbar{
+    background-color: #ebe6e0;
+}
+
+.container .sidebar .email-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    transition: 500ms;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.container .sidebar .email-icon:hover{
+    background-color: #ebe6e0;
+    border-radius: 50%;
+    margin-right: 10px;
+} 
+
+.container .sidebar .send-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid black;
+}
+
+.container .sidebar .send-icon:hover{
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+} 
+
+.container .sidebar .send-icon img{
+    margin-right: 13px;
+    margin-top: 10px;
+}
