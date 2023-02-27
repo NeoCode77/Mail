@@ -56,7 +56,7 @@ body{
     margin-right: 10px;
 }
 
-.container .sidebar .email-icon:hover{
+.container .sidebar .active{
     background-color: #ebe6e0;
     border-radius: 50%;
     margin-right: 10px;
@@ -73,11 +73,6 @@ body{
     margin-right: 10px;
 }
 
-.container .sidebar .send-icon:hover{
-    background-color: white;
-    border-radius: 50%;
-    margin-right: 10px;
-} 
 
 .container .sidebar .send-icon img{
     margin-right: 13px;
@@ -95,6 +90,7 @@ body{
     border-radius: 20px ;
     align-items: center;
     overflow: auto;
+    transition: 500ms;
 }
 
 .container .mainbar .head-main{
@@ -156,6 +152,7 @@ body{
 .container .viewbar{
     border-radius: 20px;
     padding: 20px;
+    transition: 500ms;
 }
 
 .container .viewbar hr{
@@ -171,4 +168,79 @@ body{
    outline: none;
    border: none;
    background-color: #ebe6e0;
+}
+
+.container .sendbar{
+    position: relative;
+    display: none;
+    background-color:  #ebe7e2;
+    border-radius: 20px ;
+}
+
+.container .sendbar .email-in{
+    display: block;
+    box-sizing: content-box;
+    width: 30%;
+    height: 30px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 25px;
+    outline: none;
+    border: 5px solid #478498;
+    color: #478498;
+    font-weight: bold;
+    margin: 10px;
+    background-color: #ebe7e2;
+}
+
+.container .sendbar .title-in{
+    display: block;
+    box-sizing: content-box;
+    width: 30%;
+    height: 30px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 25px;
+    outline: none;
+    border: 5px solid #478498;
+    color: #478498;
+    font-weight: bold;
+    margin: 10px;
+    background-color: #ebe7e2;
+}
+
+.container .sendbar hr{
+    border: 5px solid #478498;
+    width: 98%;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.container .sendbar textarea{
+    font-size: 20px;
+    resize: none;
+    outline: none;
+    border: none;
+    background-color: #ebe7e2;
+    margin: 30px;
+}
+
+.container .sendbar .send-button{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.container .sendbar .send-button img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    margin-top: 10px;
+    
 }

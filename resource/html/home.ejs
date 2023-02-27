@@ -10,8 +10,8 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="email-icon active"><img src="./image/email.png"></div>
-            <div class="send-icon"> <img src="./image/send.png"></div>
+            <div class="email-icon email active"><img src="./image/email.png" class="email"></div>
+            <div class="send-icon send"> <img src="./image/send.png" class="send"></div>
         </div>
 
         <div class="mainbar">
@@ -55,6 +55,15 @@
             <hr>
             <textarea readonly cols="55" rows="17" re>wewiueiwueiwu</textarea>
         </div>
+
+        <div class="sendbar">
+            <input type="text" class="email-in" placeholder="email">
+            <input type="text" class="title-in" placeholder="title">
+            <hr>
+            <textarea cols="95" rows="17"></textarea>
+            <div class="send-button"><img src="./image/send.png" alt="" srcset=""></div>
+        </div>
     </div>
+    <script src="./config/home.js"></script>
 </body>
 </html>
