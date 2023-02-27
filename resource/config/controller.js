@@ -24,6 +24,10 @@ class controller{
     get_login(req,res){
         res.render("login.ejs");
     }
+
+    get_home(req,res){
+        res.render("home.ejs")
+    }
 }
 
 module.exports = controller;

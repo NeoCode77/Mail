@@ -14,3 +14,6 @@ app.listen(config.server.port);
 app.route("/")
     .post((req,res) => {controller.post_login(req,res)})
     .get((req,res) => {controller.get_login(req,res)});
+
+app.route("/home")
+    .get((req,res) => {controller.get_home(req,res)})
