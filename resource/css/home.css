@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Bahnschrift SemiBold",sans-serif;
 }
 
 body{
@@ -39,11 +40,6 @@ body{
     color: white;
 }
 
-.container .mainbar{
-    background-color:  #ebe7e2;
-    border-radius: 20px ;
-
-}
 
 .container .viewbar{
     background-color: #ebe6e0;
@@ -72,10 +68,9 @@ body{
     align-items: center;
     width: 100px;
     height: 100px;
-    transition: 1s;
+    transition: 500ms;
     border-radius: 50%;
     margin-right: 10px;
-    border: 5px solid black;
 }
 
 .container .sidebar .send-icon:hover{
@@ -87,4 +82,93 @@ body{
 .container .sidebar .send-icon img{
     margin-right: 13px;
     margin-top: 10px;
+}
+
+
+/*mainbar*/
+
+.container .mainbar{
+    position: relative;
+    background-color:  #ebe7e2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px ;
+    align-items: center;
+    overflow: auto;
+}
+
+.container .mainbar .head-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #ebe6e0;
+    font-weight: bold;
+    width: 90%;
+    height: 50px;
+    background-color: #478498;
+    margin: 20px;
+    border-radius: 20px ;
+}
+
+.container .mainbar .list-mail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .mainbar .list-mail .mail-card{
+   
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    width: 90%;
+    height: 100px;
+    margin: 10px 0px 10px 0px;
+    background-color: #ddd7d0;
+    border-radius: 20px;
+}
+
+.container .mainbar .list-mail .mail-card img{
+    width: 70px;
+    height: 70px;
+}
+
+.container .mainbar::-webkit-scrollbar{
+    width: 20px;
+    overflow: hidden;
+}
+
+.container .mainbar::-webkit-scrollbar-track{
+    border-radius: 0px 20px 20px 0px;
+    background-color: #ebe6e0;
+    overflow: hidden;
+
+}
+
+.container .mainbar::-webkit-scrollbar-thumb{
+    background-color: #ddd7d0;
+}
+
+.container .viewbar{
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.container .viewbar hr{
+    margin: 20px 0px 20px 0px;
+    border-radius: 20px;
+    height: 10px;
+    background-color: #478498;
+}
+
+.container .viewbar textarea{
+   font-size: 20px;
+   resize: none;
+   outline: none;
+   border: none;
+   background-color: #ebe6e0;
 }
